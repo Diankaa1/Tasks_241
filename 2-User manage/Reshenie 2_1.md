@@ -29,7 +29,7 @@ cat /etc/passwd | tail -n 2 # -n 2 выведет последних двух
 ```
 
 <div style="text-align: left;">
-  <img src="images/image-2.png" alt="Мой скриншот" />
+  <img src="Images/image-2.png" alt="Мой скриншот" />
 </div>
 
 
@@ -41,7 +41,7 @@ usermod -aG wheel user1
 usermod -aG user1 user2
 ```
 <div style="text-align: left;">
-  <img src="images/image-3.png" alt="Мой скриншот" />
+  <img src="Images/image-3.png" alt="Мой скриншот" />
 </div>
 
 ## 3) Что такое права доступа? Выведите права доступа на файлы в директории пользователя
@@ -103,7 +103,7 @@ chmod 777 file.txt
 ```
 
 <div style="text-align: left;">
-  <img src="images/image-6.png" alt="Мой скриншот" />
+  <img src="Images/image-6.png" alt="Мой скриншот" />
 </div>
 
 Символьный способ:
@@ -113,7 +113,7 @@ chmod a+rwx file_1.txt
 ```
 
 <div style="text-align: left;">
-  <img src="images/image-5.png" alt="Мой скриншот" />
+  <img src="Images/image-5.png" alt="Мой скриншот" />
 </div>
 
 ## 5) Как называется учётная запись встренного администратора в linux?
@@ -141,7 +141,7 @@ getent passwd user2 # Получение информации о пользов�
 ```
 
 <div style="text-align: left;">
-  <img src="images/image-7.png" alt="Мой скриншот" />
+  <img src="Images/image-7.png" alt="Мой скриншот" />
 </div>
 
 ## 9) Как можно изменить владельца папки? Измените владельца папки из пункта 4
@@ -153,5 +153,5 @@ chown user1:user1 file.txt # смена владельца файла(Также
 ```
 
 <div style="text-align: left;">
-  <img src="images/image-8.png" alt="Мой скриншот" />
+  <img src="Images/image-8.png" alt="Мой скриншот" />
 </div>
