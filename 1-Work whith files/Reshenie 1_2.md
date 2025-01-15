@@ -65,7 +65,7 @@ tail file.txt
 echo "HELPPPPP" > file.txt
 ```
 
-## 5) пернеаправить stdout в stderr и обратно на примере команды kinit, ping, tracert
+## 5) Перенаправить stdout в stderr и обратно на примере команды kinit, ping, tracert
 
 - kinit — получение Kerberos-тикета.
 
@@ -91,13 +91,13 @@ ping sait.com 2> /dev/stdout
 kinit 2> stderr.log 
 ```
 
-## 6) чем отличаются stdout и stderr
+## 6) Чем отличаются stdout и stderr
 
 stdout — это поток, куда программа выводит результаты своей работы.
 
 stderr — это поток, куда программа выводит сообщения об ошибках.
 
-## 7) что такое stdin?
+## 7) Что такое stdin?
 
 stdin — это поток, из которого программа получает входные данные.
 
