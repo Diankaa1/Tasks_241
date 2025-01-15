@@ -43,6 +43,9 @@ done
 ```chmod +x script_5_2.sh```
 ```./script_5_2.sh```
 
+<div style="text-align: left;">
+  <img src="image-5.png" alt="Мой скриншот" />
+</div>
 
 ## 2. Создайте юнит который будет вызывать этот скрипт при запуске. Проверьте
 
