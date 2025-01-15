@@ -57,7 +57,7 @@ ls -l
 Результат:
 
 <div style="text-align: left;">
-  <img src="images/image-4.png" alt="Мой скриншот" />
+  <img src="Images/image-4.png" alt="Мой скриншот" />
 </div>
 
 
