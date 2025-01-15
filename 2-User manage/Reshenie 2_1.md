@@ -28,7 +28,10 @@ passwd user2
 cat /etc/passwd | tail -n 2 # -n 2 выведет последних двух
 ```
 
-![alt text](images/image-2.png)
+<div style="text-align: left;">
+  <img src="images/image-2.png" alt="Мой скриншот" />
+</div>
+
 
 ## 2) Назначьте пользователю 1 группу администраторов, пользователя 2 добавьте в группу пользователя 1.
 
@@ -37,7 +40,9 @@ usermod -aG adm user1
 usermod -aG wheel user1
 usermod -aG user1 user2
 ```
-![alt text](images/image-3.png)
+<div style="text-align: left;">
+  <img src="images/image-3.png" alt="Мой скриншот" />
+</div>
 
 ## 3) Что такое права доступа? Выведите права доступа на файлы в директории пользователя
 
@@ -51,7 +56,10 @@ ls -l
 
 Результат:
 
-![alt text](images/image-4.png)
+<div style="text-align: left;">
+  <img src="images/image-4.png" alt="Мой скриншот" />
+</div>
+
 
 За права файлов в linux тут отвечают черточки. Первая это тип файла. Дальше же идут группы прав сначала для владельца, для группы и для всех остальных. Всего девять черточек на права и одна на тип.
 
@@ -94,7 +102,9 @@ ls -l
 chmod 777 file.txt
 ```
 
-![alt text](images/image-6.png)
+<div style="text-align: left;">
+  <img src="images/image-6.png" alt="Мой скриншот" />
+</div>
 
 Символьный способ:
 
@@ -102,7 +112,9 @@ chmod 777 file.txt
 chmod a+rwx file_1.txt
 ```
 
-![alt text](images/image-5.png)
+<div style="text-align: left;">
+  <img src="images/image-5.png" alt="Мой скриншот" />
+</div>
 
 ## 5) Как называется учётная запись встренного администратора в linux?
 
@@ -128,7 +140,9 @@ sudo userdel -r user2 # Удаление пользователя user2
 getent passwd user2 # Получение информации о пользователе user2
 ```
 
-![alt text](images/image-7.png)
+<div style="text-align: left;">
+  <img src="images/image-7.png" alt="Мой скриншот" />
+</div>
 
 ## 9) Как можно изменить владельца папки? Измените владельца папки из пункта 4
 
@@ -138,4 +152,6 @@ getent passwd user2 # Получение информации о пользов�
 chown user1:user1 file.txt # смена владельца файла(Также для папки)
 ```
 
-![alt text](images/image-8.png)
+<div style="text-align: left;">
+  <img src="images/image-8.png" alt="Мой скриншот" />
+</div>
