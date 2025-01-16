@@ -11,10 +11,10 @@ sudo apt-get install iptables
 
 
 ```bash
-ssh arzdez
+ssh arzdez_server
 ```
 
-Да, осталась
+Да, осталась.
 
 
 ## 3. Почему может пропасть такая возможность?
@@ -25,7 +25,7 @@ ssh arzdez
 ## 4. Откройте нужный порт на сервере чтобы восстановить подключение
 
 ```bash
-iptables -A INPUT -p tcp --dport 206 -j ACCEPT
+iptables -A INPUT -p tcp --dport 203 -j ACCEPT
 ```
 
 - `-A` - append (Добавить)
@@ -52,16 +52,12 @@ iptables -A INPUT -p tcp --dport 206 -j ACCEPT
 
 ## 7. Как их сохранить?
 
-Сначала зайти под рут правами
-`sudo -i`
-
 ```bash
 iptables-save  > /etc/iptables.rules
-# без рут прав эта команда не работает, хз почему
 ```
 
 ```bash
-sudo nano /etc/systemd/system/iptables-restore.service
+nano /etc/systemd/system/iptables-restore.service
 ```
 
 ```ini
@@ -85,17 +81,17 @@ WantedBy=multi-user.target
 - `WantedBy=multi-user.target` — сервис активируется в многопользовательском режиме.
 
 ```bash
-sudo systemctl daemon-reload
+systemctl daemon-reload
 ```
 
 ```bash
-sudo systemctl enable iptables-restore.service
-sudo systemctl start iptables-restore.service
+systemctl enable iptables-restore.service
+systemctl start iptables-restore.service
 ```
 ```bash
-sudo systemctl status iptables-restore.service
+systemctl status iptables-restore.service
 ```
 
-<div style="text-align: center;">
-  <img src="Screenshoots\Screen2.png" alt="Мой скриншот" />
+<div style="text-align: left;">
+  <img src="image.png" />
 </div>
