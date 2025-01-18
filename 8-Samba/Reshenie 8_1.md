@@ -199,12 +199,20 @@ nano /etc/samba/smb.conf
 systemctl restart smb
 ```
 
-Новый ip виртуалки -  192.168.1.136.
 
 ```bash
-smbclient -L // 192.168.1.136 -U diana
+smbclient -L //192.168.1.138 -U diana
 ```
 
+<div style="text-align: left;">
+  <img src="image-3.png" alt="Мой скриншот" />
+</div>
+
 ```bash
-ssh diana@ 192.168.1.136 
+ssh diana@192.168.1.138
 ```
+Подключение с винды:
+
+<div style="text-align: left;">
+  <img src="image-4.png" alt="Мой скриншот" />
+</div>
